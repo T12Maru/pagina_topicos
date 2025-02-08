@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #3b8bba;
+    --secondary-color: #DBE5F1;
+    --text-color: #424040;
+    --nav-height: 60px;
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --container-max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    padding-top: var(--nav-height);
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    background: white;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#menu .pure-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: transparent;
+}
+
+#menu .pure-menu-heading {
+    background: transparent;
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+.pure-menu-heading::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://buhos.uson.mx/web/resources/images/logo-unison.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: transform var(--transition-speed) ease;
+}
+
+#menu .pure-menu-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+#menu .pure-menu-item {
+    margin: 0 0.5em;
+}
+
+#menu .pure-menu-link {
+    padding: 0.5em 1em;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease;
+}
+
+#menu .pure-menu-link:hover,
+#menu .pure-menu-link:focus {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.pure-menu-title {
+    font-weight: 600;
+    padding: 0.5em 1em;
+    color: var(--text-color);
+}
+
+.menu-link {
+    display: none;
+    position: fixed;
+    top: 0.5em;
+    right: 1em;
+    background: white;
+    padding: 0.5em;
+    border-radius: var(--border-radius);
+    z-index: 1001;
+}
+
+@media (max-width: 48em) {
+    #menu {
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        transform: translateY(-100%);
+        transition: transform var(--transition-speed) ease;
+    }
+
+    #menu.active {
+        transform: translateY(0);
+    }
+
+    #menu .pure-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu .pure-menu-list {
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    #menu .pure-menu-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    #menu .pure-menu-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-link {
+        display: block;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+.header {
+    margin: 0;
+    color: var(--text-color);
+    text-align: center;
+    padding: clamp(1em, 5vw, 2.5em) clamp(1em, 3vw, 2em) 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background: white;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* Estilos cesar ---- activos.html */
+
+/* -----------------------------------    Estilos Cesar   ----------------------------------------------- */
+.column-m {
+    float: left;
+    width: 47%;
+    padding: 15px;
+}
+
+.row-m::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column-m {
+        width: 100%;
+    }
+}
+
+li.tit_req {
+    margin: 23px;
+}
