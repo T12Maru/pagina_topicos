@@ -182,12 +182,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Estilos cesar ---- activos.html */
 
 /* -----------------------------------    Estilos Cesar   ----------------------------------------------- */
+
+/* Estilos para poder dividir mi div en 2 */
 .column-m {
     float: left;
     width: 47%;
     padding: 15px;
 }
 
+/* le doy formato de tabla a mi div */
 .row-m::after {
     content: "";
     display: table;
@@ -200,18 +203,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Margent a mis objetos de listas */
 li.tit_req {
     margin: 23px;
 }
 
-/* -----------------------------------   Estilos Manuel   ----------------------------------------------- */
-
-.content {
-    padding: 0px 10% 0px 10%;
+/* Le doy estilo a mi div que contiene la seccion de requisitos */
+#requisitos {
+    background-color: #FFFFFF;
+    padding: 2%;
+    max-width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid rgb(200,200,200);
+    border-radius: 25px;
 }
 
-.footer > *{
-    padding-bottom: 20px;
-    text-align: center;
-    background-color: rgb(83, 140, 198);
+/* Estilos para mis links en la seccion de requisitos */
+#req-links {
+    text-decoration: none;
+    
+}
+
+/* -----------------------------------   Estilos Manuel   ----------------------------------------------- */
+.content {
+    padding: 0px 10% 0px 10%;
 }
