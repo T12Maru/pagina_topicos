@@ -310,26 +310,18 @@ img {
 /* Estilos cesar ---- activos.html */
 
 /* -----------------------------------    Estilos Cesar   ----------------------------------------------- */
-.column-m {
-    float: left;
-    width: 47%;
-    padding: 15px;
+table, th, td {
+    border: 1px solid;
 }
 
-.row-m::after {
-    content: "";
-    display: table;
-    clear: both;
+table {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-@media screen and (max-width:600px) {
-    .column-m {
-        width: 100%;
-    }
-}
-
-li.tit_req {
-    margin: 23px;
+td {
+    padding-left: 30px;
+    padding-right: 5px;
 }
 
 
